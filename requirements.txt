@@ -5,6 +5,7 @@ WebOb==1.4.1
 requests==2.20
 SQLAlchemy==1.2.12
 unittest2==1.1
+PyMySQL==0.9.3
 zope.component==4.2.1
 configparser==3.5
 mozsvc==0.9

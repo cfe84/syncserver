@@ -21,7 +21,9 @@ COPY . /app
 RUN python ./setup.py develop
 
 # run as non priviledged user
-USER app
+USER 1001:1001
+
+EXPOSE 5000
 
 # run the server by default
 ENTRYPOINT ["/usr/bin/dumb-init", "/app/docker-entrypoint.sh"]
